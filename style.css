@@ -2,9 +2,37 @@ body {
   padding: 0;
   margin: 0;
   font-family: Cabin;
+  overflow-x: hidden;
 
 }
+html{
+  scroll-behavior: smooth;
+}
+.navbar{
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .pages ul {
+      display: flex;
+  }
+}
 
+/* Add CSS styles specific to smaller screens (e.g., mobile) */
+@media (max-width: 767px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .pages ul {
+      flex-direction: column;
+      text-align: center;
+  }
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -29,10 +57,12 @@ li {
   margin: 1rem;
 }
 
+
 .main {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  flex-wrap: wrap;
+  /* align-items: center; */
 }
 
 .child_1 {
@@ -51,9 +81,21 @@ span {
 }
 
 .child_2 {
-  padding-left: 8rem;
+  padding-left:8rem;
 }
-
+.child_2  img{
+  height: 400px;
+  width: 400px;
+}
+@media (max-width:768px) {
+  .child_2 {
+    padding-left: 0px;
+  }
+  .child_2  img{
+    height: 92%;
+    width: 92%;
+  }
+}
 .aboutheading {
   font-size: 24px;
   padding-top: 3rem;
@@ -111,13 +153,13 @@ span {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s;
+  transition: all ease 0.3s;
   padding-bottom: 1rem;
 }
 
 .card:hover {
   /* background-color: #094168; */
-  transform: scale(1.05);
+  transform: scale(1.03);
   background-color: #0D4C73;
 }
 
@@ -170,7 +212,7 @@ span {
 
 .contactheading {
   font-size: 24px;
-  padding-top: 3rem;
+  /* padding-top: 3rem; */
   /* box-shadow: inset 2px 20px 15px -3px rgba(0,0,0,0.1); */
   color: #094168;
   text-decoration: underline;
@@ -180,9 +222,22 @@ span {
 
 .contact-container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1em;
   box-shadow: inset 2px 20px 15px -3px rgba(0, 0, 0, 0.1);
 }
-
+.user-detail{
+  display: flex;
+  flex-wrap: wrap;
+  /* width: 100%; */
+}
+.user-detail input{
+  width: 80%;
+}
+.user-detail textarea{
+  width: 80%;
+}
 .company-detail {
   flex-direction: row;
   padding: 1rem;
@@ -200,7 +255,7 @@ span {
 }
 
 .location-image img {
-  width: 30px;
+  width: 40px;
   padding: 0.5rem;
   margin-left: 1rem;
 }
@@ -225,17 +280,17 @@ span {
 }
 
 .email-image img {
-  width: 35px;
+  width: 40px;
   padding: 0.5rem;
   margin-left: 1rem;
 }
 
 .email-image img:hover {
+  transition: all ease 0.3s ;
   background-color: #094168;
   border-radius: 50px;
-  transition: all 0.3s ease-in-out;
   margin: 10px;
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 .calldetail {
@@ -250,7 +305,7 @@ span {
 }
 
 .call-image img {
-  width: 30px;
+  width: 40px;
   padding: 0.5rem;
   margin-left: 1rem;
 }
@@ -272,7 +327,7 @@ span {
   flex-direction: column;
   margin: 2rem;
   padding-top: 2rem;
-  padding-left: 10rem;
+  /* padding-left: 10rem; */
   gap: 10px;
   color: black;
   background-color: white;
@@ -288,7 +343,8 @@ textarea {
 
 .button {
   padding: 1rem;
-  margin: 0.5rem;
+  /* margin: 0.5rem; */
+  width: 200px;
   border-radius: 1rem;
   color: white;
   background-color: #20567e;
@@ -300,6 +356,7 @@ textarea {
 }
 
 .footerdetail {
+  margin: 1em;
   box-shadow: inset 2px 20px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
@@ -314,20 +371,34 @@ textarea {
 .footerdetail{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .accountdetail{
   padding-top: 2rem;
   padding-left:20rem;
 }
-
+@media (max-width:768px) {
+  .accountdetail{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left:2rem;
+  }
+  
+}
 .account-link{
   display: flex;
   gap: 1rem;
 }
 
 .copyright{
+  width:100%;
   background-color: #094168;
   padding: 1rem;
   color: #9f9e9e;
 }
+
+
+
+
+
