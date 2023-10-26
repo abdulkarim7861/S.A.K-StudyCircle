@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>S.A.K Study Circle</title>
   <link rel="icon" href="images/s.a.k_logo.png">
+  <!-- Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
@@ -118,10 +121,11 @@
     </h2>
   </div>
   <section id="#Service">
+    <div data-aos="zoom-in-up">
 
-    <div class="cards">
-
-      <div class="card">
+      <div class="cards">
+        
+        <div class="card">
         <div class="card-image">
           <img src="./images/Curriculum Development.png">
         </div>
@@ -150,7 +154,7 @@
           <a href=""><button class="custom-button">Contact Us</button></a>
         </div>
       </div>
-
+      
       <div class="card">
         <div class="card-image">
           <img src="./images/Staff Development.png">
@@ -165,7 +169,7 @@
           <a href=""><button class="custom-button">Contact Us</button></a>
         </div>
       </div>
-
+      
       <div class="card">
         <div class="card-image">
           <img src="./images/Financial Management.png">
@@ -242,7 +246,7 @@
           <a href=""><button class="custom-button">Contact Us</button></a>
         </div>
       </div>
-
+      
       <div class="card">
         <div class="card-image">
           <img src="./images/Regulatory Compliance.png">
@@ -303,23 +307,26 @@
         </div>
       </div>
     </div>
-
+  </div>
+    
   </section>
-
+  
   <!-- END OF SERVICES -->
 
   <!-- CONTACT -->
   <br><br><br>
   <section id="contact">
+    
     <div class="contactheading">
       <h2>
         <center>CONTACT US</center>
       </h2><br>
     </div>
     <div class="contact-container">
-
+      
       <div class="company-detail">
-
+        
+        <div data-aos="fade-right">
         <div class="locationdetail">
           <div class="location-image">
             <img src="images/location.png">
@@ -328,31 +335,32 @@
             <h2>Location:</h2>
             <p>Office # 512 Siddique Villa, Near Bahadurabad ,<br> Gulshan-e-Iqbal, Karachi,<br> 07482, Pakistan</p>
           </div>
-      </div>
-
-      <div class="emaildetail">
-        <div class="email-image">
-          <img src="images/Email.png">
         </div>
-        <div class="email-header">
-          <h2>Email</h2>
-          <a href="">
-            <p>info@s.a.kstudycircle.com</p>
-          </a>
+        
+        <div class="emaildetail">
+          <div class="email-image">
+            <img src="images/Email.png">
+          </div>
+          <div class="email-header">
+            <h2>Email</h2>
+            <a href="">
+              <p>info@s.a.kstudycircle.com</p>
+            </a>
+          </div>
+        </div>
+        
+        <div class="calldetail">
+          <div class="call-image">
+            <img src="images/call.png">
+          </div>
+          <div class="call-header">
+            <h2>Call</h2>
+            <p>+92 3002107527</p>
+          </div>
         </div>
       </div>
       
-      <div class="calldetail">
-        <div class="call-image">
-          <img src="images/call.png">
-        </div>
-        <div class="call-header">
-          <h2>Call</h2>
-          <p>+92 3002107527</p>
-        </div>
-      </div>
     </div>
-
 
 
       <div class="user-detail">
@@ -425,7 +433,10 @@
 
 
 
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 
